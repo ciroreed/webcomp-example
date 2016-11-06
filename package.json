@@ -1,0 +1,15 @@
+{
+  "name": "web-comp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-comp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify test-comp.js -o bundle.js"
+  },
+  "author": "ciroreed",
+  "license": "ISC",
+  "dependencies": {
+    "kaop": "^2.3.5"
+  }
+}

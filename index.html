@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>web components with kaop</title>
+    <script src="node_modules/kaop/dist/kaop-lib.min.js" charset="utf-8"></script>
+    <script src="kselect.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      window.onload = function(){
+        var kselect = document.querySelector("k-select");
+        var p = document.querySelector("p");
+
+        kselect.addEventListener("change", function(e){
+          p.innerHTML = e.target.value;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <k-select>
+      <option></option>
+      <option>Ford</option>
+      <option>Opel</option>
+      <option>Renault</option>
+      <option>Citroen</option>
+      <option>Seat</option>
+      <option>BMW</option>
+      <option>Mercedes</option>
+      <option>Fiat</option>
+    </k-select>
+    <br>
+    <p></p>
+  </body>
+</html>
